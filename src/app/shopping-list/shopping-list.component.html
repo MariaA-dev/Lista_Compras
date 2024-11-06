@@ -1,0 +1,19 @@
+<app-add-item (addItem)="addItem($event)"></app-add-item>
+
+<h2>Não Comprados</h2>
+<ul>
+  <li *ngFor="let item of items.filter(i => !i.bought)">
+    {{ item.name }}
+    <button (click)="toggleBought(item)">Marcar como Comprado</button>
+    <button (click)="deleteItem(item.id)">Excluir</button>
+  </li>
+</ul>
+
+<h2>Comprados</h2>
+<ul>
+  <li *ngFor="let item of items.filter(i => i.bought)">
+    <s>{{ item.name }}</s>
+    <button (click)="toggleBought(item)">Desmarcar</button>
+    <button (click)="deleteItem(item.id)">Excluir</button>
+  </li>
+</ul>
