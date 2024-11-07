@@ -1,23 +1,20 @@
-// src/app/app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { AddItemComponent } from './add-item/add-item.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { routes } from './app.routes'; // Importando o arquivo app.routes.ts
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddItemComponent,
-    ShoppingListComponent
+    // Outros componentes
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    RouterModule.forRoot(routes) // Configuração das rotas
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
