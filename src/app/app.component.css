@@ -1,0 +1,56 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f1e1; /* Amarelo bem suave para o fundo global */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: 600px; /* Responsividade em dispositivos móveis */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #f39c12; /* Título em amarelo */
+    margin-bottom: 20px;
+  }
+  
+  button {
+    border: none;
+    background-color: #f39c12; /* Amarelo forte */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #e67e22; /* Amarelo mais escuro */
+  }
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .add-item input {
+        font-size: 14px;
+    }
+
+    .shopping-list li {
+        font-size: 16px;
+    }
+}
+  
+  

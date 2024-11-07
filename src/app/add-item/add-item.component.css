@@ -1,11 +1,36 @@
-form {
-    display: flex;
-    gap: 8px;
-  }
-  input {
-    flex: 1;
-  }
-  button {
-    padding: 0.5em;
-  }
-  
+.add-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff3c4; /* Amarelo claro */
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.add-item input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #f1c40f; /* Amarelo forte */
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.add-item input:focus {
+  border-color: #f39c12; /* Amarelo mais escuro para foco */
+}
+
+.add-item button {
+  background-color: #f39c12; /* Amarelo forte */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-item button:hover {
+  background-color: #e67e22; /* Amarelo mais escuro */
+}
